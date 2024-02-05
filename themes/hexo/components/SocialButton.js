@@ -38,6 +38,9 @@ const SocialButton = () => {
       {siteConfig('CONTACT_YOUTUBE') && <a target='_blank' rel='noreferrer' title={'youtube'} href={siteConfig('CONTACT_YOUTUBE')} >
         <i className='transform hover:scale-125 duration-150 fab fa-youtube dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
+      {siteConfig('CONTACT_JIANSHU') && <a target='_blank' rel='noreferrer' title={'jianshu'} href={siteConfig('CONTACT_JIANSHU')} >
+        <i className='transform hover:scale-125 duration-150 fab fa-book dark:hover:text-indigo-400 hover:text-indigo-600'/>
+      </a>}
     </div>
   </div>
 }
