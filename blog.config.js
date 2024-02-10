@@ -353,9 +353,9 @@ const BLOG = {
   SEO_GOOGLE_SITE_VERIFICATION:
         process.env.NEXT_PUBLIC_SEO_GOOGLE_SITE_VERIFICATION || '0k9DLGWiLdsp12pAGpIHy8IDyQA_m8J95dc1JI5WJPg', // Remove the value or replace it with your own google site verification code
 
-  SEO_BAIDU_SITE_VERIFICATION:
-        process.env.NEXT_PUBLIC_SEO_BAIDU_SITE_VERIFICATION || 'codeva-ISUlK8uJf3', // Remove the value or replace it with your own google site verification code
-
+  // SEO_BAIDU_SITE_VERIFICATION:
+  //       process.env.NEXT_PUBLIC_SEO_BAIDU_SITE_VERIFICATION || 'codeva-ISUlK8uJf3', // Remove the value or replace it with your own google site verification code
+  SEO_BAIDU_SITE_VERIFICATION: process.env.NEXT_PUBLIC_SEO_BAIDU_SITE_VERIFICATION || 'codeva-w9ustLdGlg',
   // <---- 站点统计
 
   // START---->营收相关
