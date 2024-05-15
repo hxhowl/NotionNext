@@ -183,6 +183,10 @@ const nextConfig = {
       'themes',
       THEME
     )
+    // Enable source maps in development mode
+    if (process.env.NODE_ENV_API === 'development') {
+      config.devtool = 'source-map'
+    }
     return config
   },
   experimental: {
@@ -199,7 +203,6 @@ const nextConfig = {
   },
   publicRuntimeConfig: {
     // 这里的配置既可以服务端获取到，也可以在浏览器端获取到
-    NODE_ENV_API: process.env.NODE_ENV_API || 'prod',
     THEMES: themes
   }
 }
