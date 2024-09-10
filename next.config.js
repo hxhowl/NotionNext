@@ -79,6 +79,7 @@ function scanSubdirectories(directory) {
 
 const nextConfig = {
   output: process.env.EXPORT ? 'export' : undefined,
+  staticPageGenerationTimeout: 120,
   // 多语言， 在export时禁用
   i18n: process.env.EXPORT
     ? undefined
@@ -202,9 +203,7 @@ const nextConfig = {
     return config
   },
   experimental: {
-    scrollRestoration: true,
-    workerThreads: false,
-    cpus: 1
+    scrollRestoration: true
   },
   exportPathMap: async function (
     defaultPathMap,
