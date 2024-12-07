@@ -482,7 +482,8 @@ const BLOG = {
         process.env.NEXT_PUBLIC_DESCRIPTION || '❤hope you enjoy❤', // 站点描述，被notion中的页面描述覆盖
 
   // 开发相关
-  NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
+  NOTION_ACTIVE_USER: process.env.NOTION_ACTIVE_USER || '',
+  NOTION_TOKEN_V2: process.env.NOTION_TOKEN_V2 || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
   ENABLE_CACHE: process.env.ENABLE_CACHE || process.env.npm_lifecycle_event === 'build' || process.env.npm_lifecycle_event === 'export', // 在打包过程中默认开启缓存，开发或运行时开启此功能意义不大。
   isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
