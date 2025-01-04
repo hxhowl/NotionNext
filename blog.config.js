@@ -479,6 +479,9 @@ const BLOG = {
   DESCRIPTION:
         process.env.NEXT_PUBLIC_DESCRIPTION || '❤hope you enjoy❤', // 站点描述，被notion中的页面描述覆盖
 
+  // Redis 缓存数据库地址
+  REDIS_URL: process.env.REDIS_URL || '',
+
   // 开发相关
   NOTION_ACTIVE_USER: process.env.NOTION_ACTIVE_USER || '',
   NOTION_TOKEN_V2: process.env.NOTION_TOKEN_V2 || '', // Useful if you prefer not to make your database public
