@@ -115,7 +115,7 @@ const nextConfig = {
   // 默认将feed重定向至 /public/rss/feed.xml
   redirects: process.env.EXPORT
     ? undefined
-    : async () => {
+    : () => {
         return [
           {
             source: '/feed',
@@ -127,7 +127,7 @@ const nextConfig = {
   // 重写url
   rewrites: process.env.EXPORT
     ? undefined
-    : async () => {
+    : () => {
         // 处理多语言重定向
         const langsRewrites = []
         if (BLOG.NOTION_PAGE_ID.indexOf(',') > 0) {
@@ -174,7 +174,7 @@ const nextConfig = {
       },
   headers: process.env.EXPORT
     ? undefined
-    : async () => {
+    : () => {
         return [
           {
             source: '/:path*{/}?',
@@ -215,7 +215,7 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true
   },
-  exportPathMap: async function (
+  exportPathMap: function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
